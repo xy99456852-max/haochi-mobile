@@ -1,0 +1,22 @@
+export type MenuItem = {
+  id: string; kind: "dish" | "restaurant"; name: string; cuisine: string;
+  price: number; image: string; description: string; location: string;
+  tags: string; spicy: number; demo: number; updated_at?: string;
+};
+export const baseCuisines = ["川湘菜", "江浙菜", "粤菜", "日式料理", "韩式料理", "西餐", "轻食", "面食小吃"];
+export const seeds: MenuItem[] = [
+  {id:"dish-1",kind:"dish",name:"牛油果能量碗",cuisine:"轻食",price:32,image:"/food/rice.jpg",description:"牛油果、谷物与新鲜蔬菜，装进一碗色彩满满的好心情。",location:"小绿碗",tags:"清爽一点,一人食",spicy:0,demo:1},
+  {id:"dish-2",kind:"dish",name:"鲜虾豚骨拉面",cuisine:"日式料理",price:38,image:"/food/ramen.jpg",description:"热气腾腾的浓郁汤底，搭配鲜虾、溏心蛋和劲道面条。",location:"巷口拉面",tags:"暖胃,汤汤水水",spicy:0,demo:1},
+  {id:"dish-3",kind:"dish",name:"香烤鸡肉沙拉",cuisine:"轻食",price:35,image:"/food/salad.jpg",description:"新鲜时蔬配上香烤鸡肉，再淋一点清爽的油醋汁。",location:"小绿碗",tags:"清爽一点,蔬菜多多",spicy:0,demo:1},
+  {id:"dish-4",kind:"dish",name:"意式薄底披萨",cuisine:"西餐",price:58,image:"/food/pizza.jpg",description:"薄脆饼底、浓郁番茄酱和拉丝芝士，一起分着吃更快乐。",location:"慢慢意面馆",tags:"朋友聚餐,芝士控",spicy:0,demo:1},
+  {id:"dish-5",kind:"dish",name:"手作鲜肉水饺",cuisine:"面食小吃",price:26,image:"/food/dumplings.jpg",description:"皮薄馅满的手工水饺，蘸一点香醋，就是熟悉的家常味。",location:"阿姨的厨房",tags:"家常味道,暖胃",spicy:0,demo:1},
+  {id:"dish-6",kind:"dish",name:"炭火烤肉拼盘",cuisine:"韩式料理",price:78,image:"/food/grill.jpg",description:"滋滋作响的炭火烤肉，包上生菜，和朋友一起大口吃。",location:"炭火小院",tags:"肉食快乐,朋友聚餐",spicy:1,demo:1},
+  {id:"dish-7",kind:"dish",name:"奶油咖喱鸡",cuisine:"东南亚菜",price:42,image:"/food/chicken.jpg",description:"浓郁的奶油咖喱裹上嫩鸡肉，拌着热米饭吃到最后一口。",location:"咖喱小馆",tags:"下饭首选,浓郁香气",spicy:1,demo:1},
+  {id:"dish-8",kind:"dish",name:"时蔬暖汤碗",cuisine:"江浙菜",price:28,image:"/food/soup.jpg",description:"把当季蔬菜煮进一碗暖汤，给忙碌的一天按下暂停。",location:"阿姨的厨房",tags:"清爽一点,暖胃",spicy:0,demo:1},
+  {id:"restaurant-1",kind:"restaurant",name:"一碗食堂",cuisine:"日式料理",price:40,image:"/food/bistro.jpg",description:"想好好吃一顿饭的时候，就来这间温暖的小食堂。",location:"添加你们熟悉的地址",tags:"一人食,舒服小店",spicy:0,demo:1},
+  {id:"restaurant-2",kind:"restaurant",name:"慢慢意面馆",cuisine:"西餐",price:88,image:"/food/restaurant.jpg",description:"一份意面，一张披萨，留一点时间慢慢聊天。",location:"添加你们熟悉的地址",tags:"约会,朋友聚餐",spicy:0,demo:1},
+  {id:"restaurant-3",kind:"restaurant",name:"炭火小院",cuisine:"韩式料理",price:98,image:"/food/grill.jpg",description:"烤肉的香气与热闹的气氛，适合下班后的一次小聚。",location:"添加你们熟悉的地址",tags:"朋友聚餐,肉食快乐",spicy:1,demo:1},
+  {id:"restaurant-4",kind:"restaurant",name:"咖喱小馆",cuisine:"东南亚菜",price:65,image:"/food/chicken.jpg",description:"一间飘着咖喱香的小馆子，每一道都想再添一碗饭。",location:"添加你们熟悉的地址",tags:"浓郁香气,家常味道",spicy:1,demo:1},
+  {id:"restaurant-5",kind:"restaurant",name:"小绿碗",cuisine:"轻食",price:38,image:"/food/salad.jpg",description:"新鲜、轻盈、吃得舒服，工作日午餐的好选择。",location:"添加你们熟悉的地址",tags:"清爽一点,一人食",spicy:0,demo:1},
+  {id:"restaurant-6",kind:"restaurant",name:"阿姨的厨房",cuisine:"江浙菜",price:48,image:"/food/bistro.jpg",description:"一间充满烟火气的小馆子，做你惦记的家常味。",location:"添加你们熟悉的地址",tags:"家常味道,舒服小店",spicy:0,demo:1},
+];
